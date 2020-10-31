@@ -1,0 +1,16 @@
+{
+    "name"  : "jichangfeng/pgsql",
+    "type"  : "library",
+    "keywords": ["pgsql", "pdo", "pdo_pgsql"],
+    "homepage": "http://www.workerman.net",
+    "license" : "MIT",
+    "description": "Long-living PostgreSQL connection for daemon.",
+    "require": {
+        "php": ">=5.3",
+        "ext-pdo": "*",
+        "ext-pdo_pgsql": "*"
+    },
+    "autoload": {
+        "psr-4": {"Workerman\\PostgreSQL\\": "./src"}
+    }
+}

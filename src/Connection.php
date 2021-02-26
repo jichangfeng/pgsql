@@ -1854,6 +1854,7 @@ class Connection
         } elseif ($statement === 'update' || $statement === 'delete' || $statement === 'replace') {
             return $this->sQuery->rowCount();
         } elseif ($statement === 'insert') {
+            return $this->sQuery->rowCount();
             if ($this->sQuery->rowCount() > 0) {
                 return $this->lastInsertId();
             }
